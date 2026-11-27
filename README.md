@@ -67,7 +67,6 @@ python3 azlocal.py report --output evidence/cloud_operations_report.json
 sha256sum evidence/cloud_operations_report.json
 ```[cite: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22]
 
----
 ```
 ## Evidence & Verification
 
