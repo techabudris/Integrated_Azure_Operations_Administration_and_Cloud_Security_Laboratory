@@ -1,0 +1,100 @@
+{
+  "alert_rules": {
+    "high-cpu": {
+      "enabled": true,
+      "metric": "cpu_percent",
+      "threshold": 85
+    }
+  },
+  "assignments": [
+    {
+      "role": "Owner",
+      "scope": "subscription",
+      "user": "student-admin"
+    },
+    {
+      "role": "Reader",
+      "scope": "subscription",
+      "user": "auditor"
+    },
+    {
+      "role": "Reader",
+      "scope": "group:rg-icdfa-lab",
+      "user": "analyst"
+    }
+  ],
+  "created_at": "2026-11-23T19:12:19+00:00",
+  "groups": {
+    "rg-icdfa-lab": {
+      "location": "local-linux",
+      "locked": false,
+      "tags": {
+        "environment": "training",
+        "owner": "Student"
+      }
+    }
+  },
+  "lab": "CCSE-102 Azure Operations - offline simulation",
+  "location": "local-linux",
+  "maintenance": [],
+  "metrics": [
+    {
+      "cpu_percent": 32,
+      "resource": "vm-demo",
+      "time": "2026-11-25T09:09:32+00:00"
+    },
+    {
+      "cpu_percent": 86,
+      "resource": "vm-demo",
+      "time": "2026-11-25T09:09:32+00:00"
+    },
+    {
+      "cpu_percent": 94,
+      "resource": "vm-demo",
+      "time": "2026-11-25T09:09:32+00:00"
+    },
+    {
+      "cpu_percent": 8,
+      "resource": "storage-demo",
+      "time": "2026-11-25T09:09:32+00:00"
+    }
+  ],
+  "nsgs": {
+    "nsg-demo": {
+      "default": "deny",
+      "group": "rg-icdfa-lab",
+      "rules": [
+        {
+          "decision": "allow",
+          "port": 22,
+          "priority": 100,
+          "source": "192.168.56.0/24"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "sticdfalab": {
+      "blobs": {
+        "operations-file": {
+          "bytes": 409,
+          "sha256": "c067bc4c4808c9543f5c295cd5b41364b2705f7e2c6039394230589a1cf934f3",
+          "uploaded_at": "2026-11-24T13:11:19+00:00"
+        }
+      },
+      "group": "rg-icdfa-lab",
+      "https_only": true,
+      "public_access": false
+    }
+  },
+  "subscription": "ICDFA-SIM-001",
+  "vms": {
+    "vm-demo": {
+      "created_at": "2026-11-24T12:14:19+00:00",
+      "group": "rg-icdfa-lab",
+      "os": "Ubuntu (simulated record)",
+      "size": "B1s",
+      "state": "running"
+    }
+  }
+}

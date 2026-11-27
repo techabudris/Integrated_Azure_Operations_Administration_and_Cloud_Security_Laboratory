@@ -1,0 +1,24 @@
+{"action": "init", "actor": "student-admin", "detail": "new offline lab initialised", "outcome": "ok", "time": "2026-11-23T19:12:19+00:00"}
+{"action": "group-create", "actor": "student-admin", "detail": "rg-icdfa-lab", "outcome": "ok", "time": "2026-11-23T19:24:27+00:00"}
+{"action": "rbac-assign", "actor": "student-admin", "detail": {"role": "Reader", "scope": "group:rg-icdfa-lab", "user": "analyst"}, "outcome": "ok", "time": "2026-11-23T19:26:38+00:00"}
+{"action": "rbac-check", "actor": "student-admin", "detail": {"action": "write", "permitted": false, "user": "analyst"}, "outcome": "ok", "time": "2026-11-23T19:27:29+00:00"}
+{"action": "authorisation", "actor": "analyst", "detail": "write on group:rg-icdfa-lab", "outcome": "denied", "time": "2026-11-23T19:28:27+00:00"}
+{"action": "group-lock", "actor": "student-admin", "detail": "rg-icdfa-lab", "outcome": "ok", "time": "2026-11-23T19:32:04+00:00"}
+{"action": "group-unlock", "actor": "student-admin", "detail": "rg-icdfa-lab", "outcome": "ok", "time": "2026-11-23T19:33:45+00:00"}
+{"action": "vm-create", "actor": "student-admin", "detail": "vm-demo", "outcome": "ok", "time": "2026-11-24T12:14:19+00:00"}
+{"action": "vm-start", "actor": "student-admin", "detail": "vm-demo", "outcome": "ok", "time": "2026-11-24T12:15:11+00:00"}
+{"action": "nsg-create", "actor": "student-admin", "detail": "nsg-demo", "outcome": "ok", "time": "2026-11-24T12:23:16+00:00"}
+{"action": "nsg-rule", "actor": "student-admin", "detail": "nsg-demo", "outcome": "ok", "time": "2026-11-24T12:24:31+00:00"}
+{"action": "nsg-test", "actor": "student-admin", "detail": {"decision": "allow", "name": "nsg-demo", "port": 22, "source": "192.168.56.20"}, "outcome": "ok", "time": "2026-11-24T12:25:11+00:00"}
+{"action": "nsg-test", "actor": "student-admin", "detail": {"decision": "deny", "name": "nsg-demo", "port": 22, "source": "203.0.113.20"}, "outcome": "ok", "time": "2026-11-24T12:25:55+00:00"}
+{"action": "nsg-rule", "actor": "student-admin", "detail": "nsg-demo", "outcome": "ok", "time": "2026-11-24T12:33:13+00:00"}
+{"action": "nsg-remove", "actor": "student-admin", "detail": "nsg-demo", "outcome": "ok", "time": "2026-11-24T12:34:41+00:00"}
+{"action": "storage-create", "actor": "student-admin", "detail": "sticdfalab", "outcome": "ok", "time": "2026-11-24T12:58:09+00:00"}
+{"action": "storage-set", "actor": "student-admin", "detail": "sticdfalab", "outcome": "ok", "time": "2026-11-24T12:58:54+00:00"}
+{"action": "storage-set", "actor": "student-admin", "detail": "sticdfalab", "outcome": "ok", "time": "2026-11-24T13:00:15+00:00"}
+{"action": "blob-upload", "actor": "student-admin", "detail": "sticdfalab/operations-file", "outcome": "ok", "time": "2026-11-24T13:11:19+00:00"}
+{"action": "backup-create", "actor": "student-admin", "detail": "known-good", "outcome": "ok", "time": "2026-11-24T13:20:08+00:00"}
+{"action": "vm-stop", "actor": "student-admin", "detail": "vm-demo", "outcome": "ok", "time": "2026-11-24T13:20:43+00:00"}
+{"action": "backup-restore", "actor": "student-admin", "detail": "known-good", "outcome": "ok", "time": "2026-11-24T13:21:39+00:00"}
+{"action": "monitor-rule", "actor": "student-admin", "detail": "high-cpu", "outcome": "ok", "time": "2026-11-25T09:08:51+00:00"}
+{"action": "monitor-sample", "actor": "student-admin", "detail": 4, "outcome": "ok", "time": "2026-11-25T09:09:32+00:00"}

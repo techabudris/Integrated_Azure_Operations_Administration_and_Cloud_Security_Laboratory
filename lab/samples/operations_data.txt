@@ -1,0 +1,7 @@
+Case: ICDFA-OPS-004
+The academy runs a fictional application in the local Linux sandbox.
+A reader should not change resource group settings.
+A lab storage account should not allow anonymous public data access.
+Inbound SSH from the entire internet must be rejected by simulated network policy.
+Administrative changes must be auditable.
+Recover a known-good resource inventory from an integrity-checked backup.

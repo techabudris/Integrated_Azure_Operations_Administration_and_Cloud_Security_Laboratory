@@ -1,0 +1,3 @@
+Python 3.10 or later. No third-party Python packages required.
+Optional: OpenSSH server on a dedicated Ubuntu Server VM.
+Optional: curl for HTTP service testing.
