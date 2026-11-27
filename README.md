@@ -1,5 +1,5 @@
 # Integrated_Azure_Operations_Administration_and_Cloud_Security_Laboratory
-```markdown
+
 # CCSE-102 Offline Azure-Style Cloud Simulation & Security Audit
 
 An offline Azure-style cloud governance, security hardening, integrity verification, backup/restore, and monitoring lab executed on **Kali Linux** (`~/Desktop/CCSE102_C1126CCSE17867_Lab/lab/lab`) using `azlocal.py` (`CCSE-102`, Student ID `C1126CCSE17867`). All operations run locally against simulated inventory records, local sample/backup files, and exported JSON evidence rather than a live Azure tenant[cite: 1, 2, 3, 21, 22].
