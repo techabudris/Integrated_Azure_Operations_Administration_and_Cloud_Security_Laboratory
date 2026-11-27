@@ -19,7 +19,7 @@ An offline Azure-style cloud governance, security hardening, integrity verificat
 ### Governance & RBAC (`rg-icdfa-lab`)
 * Initialized the offline lab (`init`, `2026-11-23T19:12:19+00:00`) and created resource group `rg-icdfa-lab` (`group-create`, under `student-admin`.
 * Assigned `Reader` role on `group:rg-icdfa-lab` to `analyst` , verified `write` was not permitted (`"permitted": false`, and recorded a denied `write` authorization attempt (`"outcome": "denied"`.
-* Applied and later released a lock on `rg-icdfa-lab` (`group-lock` at `2026-11-23T19:32:04+00:00` and `group-unlock`.
+* Applied and later released a lock on `rg-icdfa-lab` (`group-lock` and `group-unlock`.
 
 ### Compute, NSG & Storage Hardening
 * **VM Lifecycle (`vm-demo`):** Created `vm-demo` in `rg-icdfa-lab` (`"Ubuntu (simulated record)"`, size `"B1s"`, started it, stopped it (`"state": "stopped"`, and restored it via `known-good` back to `"state": "running"`.
@@ -67,7 +67,6 @@ python3 azlocal.py report --output evidence/cloud_operations_report.json
 sha256sum evidence/cloud_operations_report.json
 ```
 
-```
 ## Evidence & Verification
 
 * **Report Path:** `evidence/cloud_operations_report.json`
